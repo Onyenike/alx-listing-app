@@ -11,20 +11,22 @@ export interface ButtonProps {
 }
 
 export interface PropertyProps {
-  name: string;
-  address: {
-    state: string;
-    city: string;
-    country: string;
-  };
-  rating: number;
-  category: string[];
-  price: number;
-  offers: {
-    bed: string;
-    shower: string;
-    occupants: string;
-  };
-  image: string;
-  discount: string;
+    id?: string | number
+    name: string
+    address: {
+        state: string
+        city: string
+        country: string
+    }
+    rating: number
+    category: string[]
+    price: number
+    offers: {
+        bed: string
+        shower: string
+        occupants: string
+    }
+    image: string
+    description?: string
+    discount?: string
 }
